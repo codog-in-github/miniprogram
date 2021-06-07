@@ -1,0 +1,35 @@
+.item{
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #000;
+  color:aliceblue;
+  float: left;
+}
+.container{
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.center{
+  /* flex-flow: wrap row;
+  justify-content:space-around; */
+  display: block;
+  margin:  0 auto;
+}
+.center::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (min-width :900px) {
+  .center{
+    width: 900px;
+  }
+}
+
+@media screen and (max-width :900px) and  (min-width :300px)  {
+  .center{
+    width:300px
+  }
+}
